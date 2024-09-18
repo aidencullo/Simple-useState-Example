@@ -8,14 +8,14 @@ export default function Gallery() {
     if (index === sculptureList.length - 1) {
       return;
     }
-    setIndex(index + 1);
+    setIndex(a => a + 1);
   }
 
   function handlePrev() {
     if (index === 0) {
       return;
     }
-    setIndex(index - 1);
+    setIndex(i => i - 1);
   }
 
   let sculpture = sculptureList[index];
